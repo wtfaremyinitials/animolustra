@@ -47,7 +47,22 @@
             <div class="border"></div>
             <br>
             <br>
-            <iframe width="1014" height="435" src="" frameborder="0" allowfullscreen></iframe>
+            <form action="" method="post" id="url-setter">
+    <input type="text" name="url" id="url" />
+    <button type="submit" name="submit">Stream This URL</button>
+    <br>
+</form>
+<iframe id="the-frame" width="1014" height="435" src="" frameborder="0" allowfullscreen></iframe>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        var url_setter = document.getElementById('url-setter'), url = document.getElementById('url'), the_iframe = document.getElementById('the-frame');
+        url_setter.onsubmit = function (event) {
+            event.preventDefault();
+            the_iframe.src = url.value;
+        };
+    }());
+</script>
             <br>
             <br>
                   </div>
