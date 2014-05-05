@@ -55,7 +55,7 @@ a:focus {
 }
 .btn-green {
   color: #fff;
-  background-color: #71be3c;
+  background-color: #578cff;
 }
 .btn-green:hover,
 .btn-green:focus {
@@ -162,7 +162,7 @@ a:focus {
   border-bottom: solid 1px #e7e7e7;
 }
 #services .service i { margin-top: 60px }
-#services .service:hover i { color: #71be3c }
+#services .service:hover i { color: #578cff }
 #work .heading p { margin-bottom: 60px }
 #portfolio { width: 100% }
 #portfolio .filters { margin-bottom: 20px }
