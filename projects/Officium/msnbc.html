@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Officium | Organize Your News</title>
+	<meta name="title" content="Officium" />
+	<meta name="description" content="Organize Your News" />
+	<link rel="image_src" href="/images/label_better_image.png" />
+
+	<meta content="http://officium.com" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/fly_sidemenu_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<meta name="author" content="Brady A">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/fly_sidemenu_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='fly_sidemenu.css' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.fly_sidemenu.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #272D30;
+  
+      text-align: center;
+      font-family: 'open sans';
+      
+    }
+    
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+
+    }
+    h1 {
+    
+      color: #FFF;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+    }
+    h2 {
+      line-height: 1px;
+      color: #FFF;
+      font-weight: 100;
+      padding: 0px 0px 0px 0px;
+      font-size: 100px;
+    }
+    h3 {
+      letter-spacing: 2px;
+      color: #FFF;
+      font-weight: 100;
+      font-size: 100px;
+    }
+    .pointer {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+ 
+      position: fixed;
+ 
+    }
+
+    }
+    pre code {
+      
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0px;
+    }
+    
+    
+    .main h1 {
+      
+      float: left;
+      width: 100%;
+      font-size: 0px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+     
+      font-family: 'open sans';
+      letter-spacing: -3px;
+      
+    }
+   
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+ 
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 100%;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+    
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #A2261E;
+    }
+    .btn {
+      width: 200px;
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      background: #00B0FF;
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #00CDFF;
+    }
+    .btns {
+      margin: 0px auto;
+    }
+    .credit {
+      background: #f6f6f6;
+      text-align: center;
+      color: #FFF;
+
+      float: left;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+    .credit a {
+      color: #FFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: #00B0FF;
+      font-weight: bold;
+      font-size: 13px;
+      color: #fff;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+    .back:hover {
+      background: #00CDFF;
+    }
+    
+    .fsm-sidebar {
+      position: fixed;
+    }
+    
+    .fsm-button {
+      font-size: 100px;
+      color: #fff;
+      line-height: 100%;
+      padding: 0px 0px 0px 20px
+    }
+    
+    .page-container {
+      max-width: 700px;
+      margin: auto;
+    }
+    
+    .page-container p{
+      font-size: 21px;
+      font-weight: 100;
+      line-height: 100;
+    }
+    
+    .page-container h3 {
+      font-family: "noto serif";
+      font-size: 23px;
+    }
+    
+	</style>
+	<center>
+        <h2>Officium</h2>
+  
+        </div>
+<iframe src="http://www.msnbc.com/" width="93%" height="880"></iframe>
+</center>
+
+	<script>
+	  $(document).ready( function() {
+	    $(".sidemenu").fly_sidemenu();
+	  });
+		
+	</script>
+	
+</head>
+<body>
+
+        <ul class="sidemenu">
+          <li><a href="index.html">CNN</a></li>
+          <li><a href="wsj.html">Wall Street Journal</a></li>
+          <li><a href="gn.html">CBS News</a></li>
+          <li><a href="yn.html">ABC News</a></li>
+          <li><a href="hp.html">Huffington Post</a></li>
+          <li><a href="msnbc.html">MSNBC</a></li>
+          <li><a href="about.html">About Officium</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
